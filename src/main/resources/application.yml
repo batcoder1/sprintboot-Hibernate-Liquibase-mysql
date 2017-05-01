@@ -1,0 +1,14 @@
+datasource:
+  cars:
+    jdbcUrl: jdbc:mysql://docker-vocento-bd-ip:3306/cardes?createDatabaseIfNotExist=true
+    connectionTestQuery: SELECT 1 FROM DUAL
+    username: mycar
+    password: mycar
+    driver-class-name: com.mysql.jdbc.Driver
+    max-wait: 5000
+    max-active: 500
+    test-on-borrow: true
+ 
+   
+
+ 

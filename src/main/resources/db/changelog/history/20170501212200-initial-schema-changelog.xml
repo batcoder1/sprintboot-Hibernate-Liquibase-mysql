@@ -1,0 +1,32 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet id="20170501212200" author="concesionario">
+		<createTable tableName="car">
+			<column name="ID" type="VARCHAR(50)">
+				<constraints nullable="false" primaryKey="true" />
+			</column>
+			<column name="CAR_CODE" type="VARCHAR(20)">
+				<constraints nullable="false" />
+			</column>
+			<column name="MODEL" type="VARCHAR(20)"/>
+			<column name="PRODUCTION_DATE" type="Date">
+				<constraints nullable="false" />
+			</column>
+			<column name="MOTOR" type="DOUBLE"/>
+			<column name="MOTOR_TYPE" type="Enum('GASOLINA','DIESEL','HIBRIDO','ELECTRICO')"/>
+			<column name="BOX_TYPE" type="Enum('AUTOMATIC','MANUAL')"/>
+			<column name="POWER" type="Integer(11)"/>
+			<column name="KILOMETRES" type="DOUBLE"/>
+
+		</createTable>
+
+
+
+	 
+	</changeSet>
+
+
+</databaseChangeLog>
